@@ -1,4 +1,7 @@
 function alpha = Alpha(mx,my,C,h) 
+    delX = h;
+    delY = h;
+    
     %Determine f2x for area calc
     if (alpha-mx*delX) > 0
         f2x = (alpha-mx*delX)^2;
