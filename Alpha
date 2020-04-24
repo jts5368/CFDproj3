@@ -1,17 +1,18 @@
 function alpha = Alpha(mx,my,C,h) 
     delX = h;
     delY = h;
+    alphaInit = 0;  %Have to figure out a good way to guess alpha
     
     %Determine f2x for area calc
-    if (alpha-mx*delX) > 0
-        f2x = (alpha-mx*delX)^2;
+    if (alphaInit-mx*delX) > 0
+        f2x = (alphaInit-mx*delX)^2;
     else
         f2x = 0;
     end
     
     %Determine f2y for area calc
-    if (alpha-my*delY) > 0
-        f2y = (alpha-mx*delY)^2;
+    if (alphaInit-my*delY) > 0
+        f2y = (alphaInit-mx*delY)^2;
     else
         f2y = 0;
     end
